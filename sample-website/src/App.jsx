@@ -1,6 +1,6 @@
 import Header from './header.jsx'
 import Aside  from './Aside.jsx'
-import ItemCard from './itemCard.jsx'
+import ItemCard from './itemCard'
 
 function App() {
 

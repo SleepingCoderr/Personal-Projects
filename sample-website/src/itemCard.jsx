@@ -1,27 +1,68 @@
-document.getElementById('btn1').onclick = () => {
-    alert("button clicked");
-}
-
+import React from 'react';
 
 function ItemCard() {
-    return (
-        <div id="card-container" className="border-2 border-black px-5 py-2 flex flex-row gap-4 flex-wrap">
+    const handleButtonClick = () => {
+        alert("button clicked");
+    };
 
-            <div id="card" className="size-60 border-2 border-black">
-                <div id="card-picture" className="py-2">
+    return (
+        <div id="card-container" className=" px-5 py-5 flex flex-row gap-5 flex-wrap rounded-lg">
+            
+            <div id="card" className="size-60  shadow-xl">
+                <div id="card-picture" className="py-2 px-3">
                     <img src="" alt="Item picture" />
-                    <div id="card-information" className="py-7 px-2">
-                        <h2 className="font-mono font-bold">Item 1</h2>
-                        <div id="card-button" className="py-16">
-                            <button className="px-5 py-1 border-2 border-black hover:bg-gray-500 hover:text-white" id="btn1">Like</button>
+                    <div id="card-information" className="py-12">
+                        <h2 className="font-mono font-bold py-7 px-3 uppercase ">Item 1</h2>
+                        <div id="card-button" className="py-5 px-3">
+                            <button
+                                className="px-5 py-1 border-2 border-black hover:bg-gray-500 hover:text-white"
+                                id="btn1"
+                                onClick={handleButtonClick}
+                            >
+                                Like
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
 
-           
+            <div id="card" className="size-60  shadow-xl">
+                <div id="card-picture" className="py-2 px-3">
+                    <img src="" alt="Item picture" />
+                    <div id="card-information" className="py-12">
+                        <h2 className="font-mono font-bold py-7 px-3 uppercase ">Item 1</h2>
+                        <div id="card-button" className="py-5 px-3">
+                            <button
+                                className="px-5 py-1 border-2 border-black hover:bg-gray-500 hover:text-white"
+                                id="btn1"
+                                onClick={handleButtonClick}
+                            >
+                                Like
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="card" className="size-60  shadow-xl">
+                <div id="card-picture" className="py-2 px-3">
+                    <img src="" alt="Item picture" />
+                    <div id="card-information" className="py-12">
+                        <h2 className="font-mono font-bold py-7 px-3 uppercase ">Item 1</h2>
+                        <div id="card-button" className="py-5 px-3">
+                            <button
+                                className="px-5 py-1 border-2 border-black hover:bg-gray-500 hover:text-white"
+                                id="btn1"
+                                onClick={handleButtonClick}
+                            >
+                                Like
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    )
+    );
 }
 
-export default ItemCard
+export default ItemCard;
